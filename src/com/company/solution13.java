@@ -12,8 +12,6 @@ public class solution13 {
         else if (length1>length2) {
             System.out.print(string1);
         }
-        else if (length1<length2) {
-            System.out.print(string2);
+                    System.out.print(string2);
         }
-    }
 }
