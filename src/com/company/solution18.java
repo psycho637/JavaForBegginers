@@ -19,15 +19,12 @@ public class solution18 {
 }
         try (FileWriter fw = new FileWriter("test.txt"))
         {
-            do {
+            for (int i=0; i < x; i++) {
                 System.out.print(": ");
                 str = nf.readLine();
-                if (y == x) break;
                 str = str + "\r\n";
-                y++;
                 fw.write(str);
             }
-            while (y != x);
         }
         catch (IOException exc){
             System.out.println("Ошибка ввода-вывода: " + exc);
